@@ -9,14 +9,11 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Find project root
+      - name: Find and build
         run: |
-          echo "Repo contents:"
-          ls -la
-          find . -name "build.gradle" | head -10
-      - name: Setup Gradle wrapper
-        run: |
-          cd $(find . -name "settings.gradle" -not -path "*/build/*" | head -1 | xargs dirname)
+          PROJECT=$(find . -name "settings.gradle" -not -path "*/build/*" | head -1 | xargs dirname)
+          echo "Project found at: $PROJECT"
+          cd "$PROJECT"
           curl -L https://raw.githubusercontent.com/gradle/gradle/v8.2.0/gradlew -o gradlew
           chmod +x gradlew
           curl -L https://github.com/gradle/gradle/raw/v8.2.0/gradle/wrapper/gradle-wrapper.jar -o gradle/wrapper/gradle-wrapper.jar
