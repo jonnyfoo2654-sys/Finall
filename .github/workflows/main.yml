@@ -9,17 +9,17 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Find and build
+      - name: Setup Gradle wrapper
+        working-directory: "StyleBeautyApp-Final (3)"
         run: |
-          PROJECT=$(find . -name "settings.gradle" -not -path "*/build/*" | head -1 | xargs dirname)
-          echo "Project found at: $PROJECT"
-          cd "$PROJECT"
           curl -L https://raw.githubusercontent.com/gradle/gradle/v8.2.0/gradlew -o gradlew
           chmod +x gradlew
           curl -L https://github.com/gradle/gradle/raw/v8.2.0/gradle/wrapper/gradle-wrapper.jar -o gradle/wrapper/gradle-wrapper.jar
-          ./gradlew assembleDebug
+      - name: Build Debug APK
+        working-directory: "StyleBeautyApp-Final (3)"
+        run: ./gradlew assembleDebug
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: StyleBeauty-APK
-          path: "**/app/build/outputs/apk/debug/*.apk"
+          path: "StyleBeautyApp-Final (3)/app/build/outputs/apk/debug/*.apk"
