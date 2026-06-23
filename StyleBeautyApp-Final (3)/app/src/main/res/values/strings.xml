@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Style &amp; Beauty Assistant</string>
+    
+    <!-- Home Screen -->
+    <string name="welcome_title">Welcome Back! 👋</string>
+    <string name="welcome_subtitle">Let\'s find your perfect look today</string>
+    <string name="analyze_face">Analyze My Face</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="trending_now">Trending Now</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_makeup">Makeup</string>
+    <string name="nav_fashion">Fashion</string>
+    <string name="nav_closet">Closet</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_profile">Profile</string>
+    
+    <!-- Quick Actions -->
+    <string name="action_virtual_tryon">Virtual Try-On</string>
+    <string name="action_virtual_tryon_desc">Test makeup looks</string>
+    <string name="action_outfit_finder">Outfit Finder</string>
+    <string name="action_outfit_finder_desc">Perfect for today</string>
+    <string name="action_my_closet">My Closet</string>
+    <string name="action_my_closet_desc">Organize wardrobe</string>
+    <string name="action_ai_stylist">AI Stylist</string>
+    <string name="action_ai_stylist_desc">Get advice</string>
+    <string name="action_skincare">Skin Care</string>
+    <string name="action_skincare_desc">Personalized routine</string>
+    <string name="action_hairstyles">Hair Styles</string>
+    <string name="action_hairstyles_desc">New look ideas</string>
+    
+    <!-- Makeup Screen -->
+    <string name="makeup_title">Makeup &amp; Beauty</string>
+    <string name="virtual_tryon_title">Virtual Makeup Try-On</string>
+    <string name="browse_products">Browse products by category or try them on virtually</string>
+    
+    <!-- Fashion Screen -->
+    <string name="fashion_title">Fashion &amp; Outfits</string>
+    
+    <!-- Closet Screen -->
+    <string name="closet_title">My Virtual Closet</string>
+    
+    <!-- Chat Screen -->
+    <string name="chat_title">AI Stylist Chat</string>
+    
+    <!-- Profile Screen -->
+    <string name="profile_title">Profile &amp; Settings</string>
+    
+    <!-- Common -->
+    <string name="back">Back</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="continue_text">Continue</string>
+    <string name="loading">Loading…</string>
+    <string name="error">Error</string>
+    <string name="retry">Retry</string>
+    
+    <!-- Permissions -->
+    <string name="permission_camera_rationale">Camera access is needed for virtual try-on and face analysis</string>
+    <string name="permission_storage_rationale">Storage access is needed to save your photos and closet items</string>
+</resources>
